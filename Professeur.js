@@ -1,3 +1,12 @@
+/**
+ * Projet : Demostration d'utilisation de Git dans VSCode
+ * Auteur : Giovana Velarde
+ * Date : 05 février 2021
+ */
+/**
+ * Cette classe représente un employé d'une Université
+ */
+
 class EmployeUniversite {
     constructor(nom, prenom, numeroEmploye, anneesExperience) {
         this.nom = nom;
@@ -16,7 +25,9 @@ class EmployeUniversite {
 
 }
 
-
+/**
+ * Cette classe représente un professeur d'une Université
+ */
 
 class EmployeUniversiteProfesseur extends EmployeUniversite {
     constructor(nom, prenom, numeroEmploye, anneesExperience, salaire, coursEnseigne) {
@@ -31,12 +42,14 @@ class EmployeUniversiteProfesseur extends EmployeUniversite {
 }
 
 
-
+//Code pour tester la classe d'un employé universitaire
 employe = new EmployeUniversite('Pierre', 'Martel', 'E0004', 5);
 employe.augmenterAnciennete();
 console.log(employe.nomComplet());
 console.log(employe.anneesExperience);
 
+
+//Code pour tester la classe d'un professeur universitaire
 prof = new EmployeUniversiteProfesseur('Carmel', 'Simon', 'P0007', 4, 65000, []);
 prof.augmenterAnciennete();
 console.log(prof.nomComplet());
