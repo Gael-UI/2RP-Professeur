@@ -5,7 +5,7 @@
  */
 /**
  * Cette classe représente un employé d'une Université
- */
+*/
 
 class EmployeUniversite {
     constructor(nom, prenom, numeroEmploye, anneesExperience) {
@@ -23,6 +23,11 @@ class EmployeUniversite {
         return this.prenom + ", " + this.nom;
     }
 
+    information() {
+        return this.numeroEmploye + " - "
+            + this.nomComplet() +
+            " - Ancienneté: " + this.anneesExperience;
+    }
 }
 
 /**
@@ -56,6 +61,7 @@ console.log(prof.nomComplet());
 console.log(prof.anneesExperience);
 console.log(prof.salaire);
 console.log(prof.coursEnseigne);
+console.log(prof.information());
 
 prof.ajouterUnCours('2RP');
 console.log(prof.coursEnseigne);
